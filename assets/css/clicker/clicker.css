@@ -5,6 +5,10 @@
     transition: transform 0.5s;
 }
 
+#plankton.clicked {
+    animation: growShrink 0.5s;
+}
+
 @media (max-width: 768px) {
     #plankton {
         width: 15em;
@@ -55,6 +59,10 @@
 @media (max-width: 768px) {
     #shop {
         width: 95%;
+    }
+
+    #score {
+        font-size: 18px;
     }
 
     .modal-content {

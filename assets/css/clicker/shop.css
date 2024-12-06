@@ -46,3 +46,22 @@ th, td {
 button:hover {
     background-color: #0277bd; /* Darker blue on hover */
 }
+
+@media (max-width: 768px) {
+    #shop {
+        width: 95%;
+        padding: 10px;
+    }
+
+    #shop h2 {
+        font-size: 1.5em;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    #shop button {
+        padding: 8px 16px;
+    }
+}

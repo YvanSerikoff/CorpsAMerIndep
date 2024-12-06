@@ -4,7 +4,6 @@ const totalScoreDisplay = document.getElementById('totalScore');
 const progressBar = document.getElementById('progressBar');
 const modal = document.getElementById('winModal');
 const span = document.getElementsByClassName('close')[0];
-const indexButton = document.getElementById('indexButton');
 const newClickerButton = document.getElementById('newClickerButton');
 const body = document.querySelector('body');
 
