@@ -83,3 +83,27 @@ iframe {
   height: 90%;
   border-radius: 50px;
 }
+
+.navigation {
+  display: none;
+  position: fixed;
+  top: 5em;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.navigation button {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    display: block;
+  }
+}

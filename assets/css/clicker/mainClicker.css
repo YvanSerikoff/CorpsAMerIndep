@@ -137,3 +137,9 @@ button:hover {
     background: rgba(128, 128, 128, 0.5);
   }
 }
+
+@media (max-width: 768px) {
+  img {
+    width: 1em;
+  }
+}

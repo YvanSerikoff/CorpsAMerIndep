@@ -1,22 +1,69 @@
+/* Adjust #plankton size and position */
 #plankton {
     width: 25em;
     cursor: pointer;
     transition: transform 0.5s;
 }
 
-#plankton.clicked {
-    animation: growShrink 0.5s;
+@media (max-width: 768px) {
+    #plankton {
+        width: 15em;
+    }
 }
 
+/* Ensure #score and #totalScore are properly displayed */
 #score {
     font-size: 24px;
 }
 
-#totalScore{
+@media (max-width: 768px) {
+    #score {
+        font-size: 18px;
+    }
+}
+
+#totalScore {
     display: none;
 }
 
-modal {
+/* Make modal responsive */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Make shop responsive */
+#shop {
+    display: none;
+    background-color: #e0f7fa;
+    color: #01579b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    #shop {
+        width: 95%;
+    }
+
+    .modal-content {
+        width: 95%;
+    }
+
+}
+
+#modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */

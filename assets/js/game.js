@@ -151,6 +151,22 @@ function pinguinSpeak(message) {
   text.innerHTML = message;
   document.querySelector(".background-animation").style.display = "flex";
 }
+
 document.getElementById("close-modal").addEventListener("click", () => {
   document.querySelector(".background-animation").style.display = "none";
+});
+
+document.getElementById('play-button').addEventListener('click', function() {
+  const point = points[activePointIndex];
+
+  pinguinSpeak(dialogPoints[point.getAttribute("data-name")]);
+  actualPoint = point.getAttribute("data-name");
+});
+
+document.getElementById('left-arrow').addEventListener('click', function() {
+  highlightPoint(Math.max(activePointIndex - 1, 0));
+});
+
+document.getElementById('right-arrow').addEventListener('click', function() {
+  highlightPoint(Math.min(activePointIndex + 1, points.length - 1));
 });
